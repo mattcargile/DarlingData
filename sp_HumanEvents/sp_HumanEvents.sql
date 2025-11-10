@@ -40,14 +40,14 @@ https://code.erikdarling.com
 
 */
 
-IF OBJECT_ID(N'dbo.sp_HumanEvents', N'P') IS NULL
+IF OBJECT_ID(N'dbo.sp_HumanEvents_matt', N'P') IS NULL
    BEGIN
-       EXECUTE (N'CREATE PROCEDURE dbo.sp_HumanEvents AS RETURN 138;');
+       EXECUTE (N'CREATE PROCEDURE dbo.sp_HumanEvents_matt AS RETURN 138;');
    END;
 GO
 
 ALTER PROCEDURE
-    dbo.sp_HumanEvents
+    dbo.sp_HumanEvents_matt
 (
     @event_type sysname = N'query',
     @query_duration_ms integer = 500,
